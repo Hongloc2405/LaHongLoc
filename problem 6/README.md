@@ -101,7 +101,8 @@ This module is responsible for handling the user scores on the website’s score
 
 ### Diagram: Execution Flow
 
-![image](https://github.com/user-attachments/assets/a195006c-10b5-4404-89c0-2430533765e3)
+![image](https://github.com/user-attachments/assets/e2639a08-ddbc-426e-8c47-01ede8bf5007)
+
 
 ### Additional Improvements/Considerations
 1. **User Feedback**:
