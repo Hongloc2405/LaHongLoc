@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "02c60777-04dd-4acf-9814-6c6a4458cb44",
+		"name": "expressjs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27170820"
+	},
+	"item": [
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getUserPermissions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3YzhlYTUyNi0wYmQ0LTQ3OGQtYWJhZi02MjA3ZTliMmE0ZTkiLCJ1c2VybmFtZSI6ImZhdG1vdXNlIiwiaXNzIjoiOTlUZWNoQ1JVREFwcCIsInNjb3BlIjoiUk9MRV9VU0VSIENSRUFURV9SRVNPVVJDRSBHRVRfUkVTT1VSQ0VTIEdFVF9SRVNPVVJDRV9ERVRBSUxTIFVQREFURV9SRVNPVVJDRSBERUxFVEVfUkVTT1VSQ0UiLCJleHAiOjE3MzY1MTk5NjksImlhdCI6MTczNjUxMjc2OX0.NzfhfPlxhXJcjM__m3f_05gM-h6iO1wzikZ6MFpwa98",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/users/get-user-permissions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"get-user-permissions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllTypes",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "createResource",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxYTk5Y2ZiZS02ZDA1LTQ2ZDctOGRmMC0zZmJiYjk5OTZlMzUiLCJ1c2VybmFtZSI6ImZhdG1vdXNlIiwiaXNzIjoiOTlUZWNoQ1JVREFwcCIsInNjb3BlIjoiUk9MRV9VU0VSIENSRUFURV9SRVNPVVJDRSBHRVRfUkVTT1VSQ0VTIEdFVF9SRVNPVVJDRV9ERVRBSUxTIFVQREFURV9SRVNPVVJDRSBERUxFVEVfUkVTT1VSQ0UiLCJleHAiOjE3MzY3OTE3NjUsImlhdCI6MTczNjc4NDU2NX0.wQT6SuyK9VcRJ_fnv1j3cB57rXrxRA7PO4lKUwrjlJI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "resourceName",
+							"value": "item 2 haha",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this is the item 2 nha",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "Document",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/resources",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"resources"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filterResource",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getTheResourceDetails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0NzMyOTgwNC02MWE1LTQ3NzMtOTc1My0wY2YzMzgyMTMxZjgiLCJ1c2VybmFtZSI6ImZhdG1vdXNlIiwiaXNzIjoiOTlUZWNoQ1JVREFwcCIsInNjb3BlIjoiUk9MRV9VU0VSIENSRUFURV9SRVNPVVJDRSBHRVRfUkVTT1VSQ0VTIEdFVF9SRVNPVVJDRV9ERVRBSUxTIFVQREFURV9SRVNPVVJDRSBERUxFVEVfUkVTT1VSQ0UiLCJleHAiOjE3MzY4NDMzNzAsImlhdCI6MTczNjgzNjE3MH0.I1zGbk6d--w3oCtj-rqU4mxBAS6wZM6Z0rlscjX0PT8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/resources/get-resource-details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"resources",
+						"get-resource-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateResourceDetails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0NzMyOTgwNC02MWE1LTQ3NzMtOTc1My0wY2YzMzgyMTMxZjgiLCJ1c2VybmFtZSI6ImZhdG1vdXNlIiwiaXNzIjoiOTlUZWNoQ1JVREFwcCIsInNjb3BlIjoiUk9MRV9VU0VSIENSRUFURV9SRVNPVVJDRSBHRVRfUkVTT1VSQ0VTIEdFVF9SRVNPVVJDRV9ERVRBSUxTIFVQREFURV9SRVNPVVJDRSBERUxFVEVfUkVTT1VSQ0UiLCJleHAiOjE3MzY4NDMzNzAsImlhdCI6MTczNjgzNjE3MH0.I1zGbk6d--w3oCtj-rqU4mxBAS6wZM6Z0rlscjX0PT8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/resources/8b842ae2-7876-4e85-a93c-70f1a87ef438",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"resources",
+						"8b842ae2-7876-4e85-a93c-70f1a87ef438"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteResource",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0NzMyOTgwNC02MWE1LTQ3NzMtOTc1My0wY2YzMzgyMTMxZjgiLCJ1c2VybmFtZSI6ImZhdG1vdXNlIiwiaXNzIjoiOTlUZWNoQ1JVREFwcCIsInNjb3BlIjoiUk9MRV9VU0VSIENSRUFURV9SRVNPVVJDRSBHRVRfUkVTT1VSQ0VTIEdFVF9SRVNPVVJDRV9ERVRBSUxTIFVQREFURV9SRVNPVVJDRSBERUxFVEVfUkVTT1VSQ0UiLCJleHAiOjE3MzY4NDMzNzAsImlhdCI6MTczNjgzNjE3MH0.I1zGbk6d--w3oCtj-rqU4mxBAS6wZM6Z0rlscjX0PT8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/resources/b2697043-0e07-471c-a4e6-14e1814c1d86",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"resources",
+						"b2697043-0e07-471c-a4e6-14e1814c1d86"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

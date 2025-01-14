@@ -27,3 +27,4 @@ npm run start
 --- 
 
 Check api-docs at [./apidocs.md](./apidocs.md)
+APIs Test in POSTMAN: [./expressjs.postman_collection.json](./expressjs.postman_collection.json)
